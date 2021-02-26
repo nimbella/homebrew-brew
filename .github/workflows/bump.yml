@@ -1,0 +1,2 @@
+- name: bump-homebrew-formula
+  uses: mislav/bump-homebrew-formula-action@v1.9

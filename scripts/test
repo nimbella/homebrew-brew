@@ -1,0 +1,9 @@
+#!/usr/bin/env bash
+
+set -ex
+
+brew update
+#brew audit --new-formula  Formula/nimbella-cli.rb
+brew install Formula/nimbella-cli.rb
+nim version
+nim help
