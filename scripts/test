@@ -7,3 +7,6 @@ brew update
 brew install Formula/nimbella-cli.rb
 nim version
 nim help
+
+
+# brew bump-formula-pr
