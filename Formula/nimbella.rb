@@ -2,8 +2,8 @@
 class Nimbella < Formula
   desc "Everything you need to get started with Nimbella"
   homepage "https://docs.nimbella.com/command-summary"
-  url "https://apigcp.nimbella.io/downloads/nim/nim-v1.16.0/nim-v1.16.0.tar.xz"
-  sha256 "06ada8b2b2e9a08eec95efbdb4664b1f1a4fb7e4d4eccc4bf621773040ba22d4"
+  url "https://apigcp.nimbella.io/downloads/nim/nim-v1.16.0/nim-v1.16.0.tar.gz"
+  sha256 "42f82e02611af5b61a83b14ca5f8dc8bff5285ca9182cf4742e1d188cb8bf905"
   depends_on "nimbella/brew/nimbella-node" => "14.4.0"
 
   def install
