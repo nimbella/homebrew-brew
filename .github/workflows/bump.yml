@@ -10,10 +10,10 @@ jobs:
       - uses: mislav/bump-homebrew-formula-action@v1
         if: "!contains(github.ref, '-')" # skip prereleases
         with:
-          formula-name: nimbella-cli.rb
+          formula-name: nim.rb
           homebrew-tap: nimbella/homebrew-brew
           base-branch: master
-          download-url: https://apigcp.nimbella.io/downloads/nim/nim-v1.13.0/nim-v1.13.0-linux-x64.tar.gz
+          download-url: https://apigcp.nimbella.io/downloads/nim/nim-v${{version}}/nim-v${{version}}.tar.gz
           commit-message: ${{formulaName}} ${{version}}
         env:
           COMMITTER_TOKEN: ${{ secrets.COMMITTER_TOKEN }}
