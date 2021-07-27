@@ -3,8 +3,8 @@
 set -ex
 
 brew update
-#brew audit --new-formula  Formula/nimbella-cli.rb
-brew install Formula/nimbella-cli.rb
+#brew audit --new-formula  Formula/nim.rb
+brew install Formula/nim.rb
 nim version
 nim help
 

@@ -1,5 +1,5 @@
 
-class NimbellaNode < Formula
+class NimNode < Formula
   desc "node.js dependency for nimbella"
   homepage "https://docs.nimbella.com/command-summary"
   url "https://nodejs.org/download/release/v14.4.0/node-v14.4.0-darwin-x64.tar.xz"

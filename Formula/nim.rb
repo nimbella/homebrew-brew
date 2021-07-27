@@ -1,5 +1,5 @@
 
-class Nimbella < Formula
+class Nim < Formula
   desc "Everything you need to get started with Nimbella"
   homepage "https://docs.nimbella.com/command-summary"
   url "https://apigcp.nimbella.io/downloads/nim/nim-v1.16.0/nim-v1.16.0.tar.gz"
@@ -8,7 +8,7 @@ class Nimbella < Formula
 
   def install
     inreplace "bin/nim", /^CLIENT_HOME=/, "export NIMBELLA_OCLIF_CLIENT_HOME=#{lib/"client"}\nCLIENT_HOME="
-    inreplace "bin/nim", "\"$DIR/node\"", Formula["nimbella-node"].opt_bin/"node"
+    inreplace "bin/nim", "\"$DIR/node\"", Formula["nim-node"].opt_bin/"node"
     libexec.install Dir["*"]
     bin.install_symlink libexec/"bin/nim"
 
