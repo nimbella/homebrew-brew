@@ -10,8 +10,8 @@ class NimNode < Formula
   keg_only "nim-node is only used by Nimbella CLI (nimbella/brew/nimbella), which explicitly requires from Cellar"
 
   resource "node" do
-    url https://nodejs.org/download/release/v14.4.0/node-v14.4.0-darwin-x64.tar.xz
-    sha256 98af3b9c9a179fbf731c06a9acedeb00c7fff8c8cb18cb48fa6f6cccd0013cd2
+    url "https://nodejs.org/download/release/v14.4.0/node-v14.4.0-darwin-x64.tar.xz"
+    sha256 "98af3b9c9a179fbf731c06a9acedeb00c7fff8c8cb18cb48fa6f6cccd0013cd2"
   end
 
   def install
