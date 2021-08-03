@@ -1,4 +1,3 @@
-
 class Nim < Formula
   desc "Everything you need to get started with Nimbella"
   homepage "https://docs.nimbella.com/command-summary"
@@ -11,7 +10,6 @@ class Nim < Formula
     inreplace "bin/nim", "\"$DIR/node\"", Formula["nim-node"].opt_bin/"node"
     libexec.install Dir["*"]
     bin.install_symlink libexec/"bin/nim"
-
   end
 
   test do
