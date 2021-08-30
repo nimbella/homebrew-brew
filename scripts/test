@@ -3,10 +3,6 @@
 set -ex
 
 brew update
-#brew audit --new-formula  Formula/nim.rb
-brew install Formula/nim.rb
+brew install Formula/nimbella.rb
 nim version
 nim help
-
-
-# brew bump-formula-pr
